@@ -14,9 +14,6 @@ class SeriesController extends Controller
             'Gray\'s Anatomy'
         ];
 
-        return view(
-            'listar-series',
-            compact('series')
-        );
+        return view('listar-series')->with('series', $series);
     }
 }
