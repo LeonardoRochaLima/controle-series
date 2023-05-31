@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-class SeriesController
-{
+use Illuminate\Http\Request;
 
-    public function listarSeries()
-    {
+class SeriesController extends Controller
+{
+    public function listarSeries(){
         $series = [
             'Punisher',
             'Lost',
